@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Class Portal — Class Members</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="notebook-edge">
+  <span class="hole"></span><span class="hole"></span><span class="hole"></span>
+  <span class="hole"></span><span class="hole"></span><span class="hole"></span>
+</div>
+
+<header class="topbar">
+  <div class="brand"><span class="dot"></span>Class Portal</div>
+  <div style="display:flex; align-items:center; gap:12px;">
+    <a href="#" class="logout-link" onclick="logout(); return false;">Log out</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+<nav class="side-nav" id="sideNav">
+  <button class="nav-close" id="navClose" aria-label="Close menu">&times;</button>
+  <div class="side-brand">📘 Menu</div>
+  <a href="dashboard.html" data-page="dashboard.html">Home</a>
+  <a href="announcements.html" data-page="announcements.html">Announcements</a>
+  <a href="assignments.html" data-page="assignments.html">Assignments</a>
+  <a href="members.html" data-page="members.html">Class Members</a>
+  <a href="settings.html" data-page="settings.html">Light Mode <span class="tag">theme</span></a>
+  <a href="photos.html" data-page="photos.html">Class Photos</a>
+  <a href="videos.html" data-page="videos.html">Class Videos</a>
+  <a href="notes.html" data-page="notes.html">Notes</a>
+</nav>
+
+<main class="page">
+
+  <div class="page-header">
+    <span class="eyebrow">Who's in class</span>
+    <h1>Class Members</h1>
+    <p>Roster for the term.</p>
+  </div>
+
+  <table>
+    <thead>
+      <tr><th>Name</th><th>Role</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Engr. Adebayo</td><td>Lecturer</td></tr>
+      <tr><td>Chinedu Okafor</td><td>Student</td></tr>
+      <tr><td>Fatima Bello</td><td>Student</td></tr>
+      <tr><td>Emeka Nwosu</td><td>Student</td></tr>
+      <tr><td>Aisha Mohammed</td><td>Student</td></tr>
+      <tr><td>Tunde Balogun</td><td>Student</td></tr>
+    </tbody>
+  </table>
+
+</main>
+
+<script src="js/app.js"></script>
+<script>requireAuth();</script>
+</body>
+</html>
