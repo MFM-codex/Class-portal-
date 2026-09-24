@@ -99,6 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initNav();
   initThemeToggle();
 });
+<<<<<<< HEAD
 
 // ---- Register service worker for offline / installable app support ----
 if ("serviceWorker" in navigator) {
@@ -106,3 +107,5 @@ if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("service-worker.js").catch(() => {});
   });
 }
+=======
+>>>>>>> cd18fdca3324ae9d045a361097d877c2db4af772
