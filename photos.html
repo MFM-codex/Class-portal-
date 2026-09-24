@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#6B3FA0" />
+<link rel="icon" href="icons/icon-192.png" />
+<link rel="apple-touch-icon" href="icons/icon-192.png" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<title>Class Portal — Class Photos</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="notebook-edge">
+  <span class="hole"></span><span class="hole"></span><span class="hole"></span>
+  <span class="hole"></span><span class="hole"></span><span class="hole"></span>
+</div>
+
+<header class="topbar">
+  <div class="brand"><span class="dot"></span>Class Portal</div>
+  <div style="display:flex; align-items:center; gap:12px;">
+    <a href="#" class="logout-link" onclick="logout(); return false;">Log out</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+<nav class="side-nav" id="sideNav">
+  <button class="nav-close" id="navClose" aria-label="Close menu">&times;</button>
+  <div class="side-brand">📘 Menu</div>
+  <a href="dashboard.html" data-page="dashboard.html">Home</a>
+  <a href="announcements.html" data-page="announcements.html">Announcements</a>
+  <a href="assignments.html" data-page="assignments.html">Assignments</a>
+  <a href="members.html" data-page="members.html">Class Members</a>
+  <a href="settings.html" data-page="settings.html">Light Mode <span class="tag">theme</span></a>
+  <a href="photos.html" data-page="photos.html">Class Photos</a>
+  <a href="videos.html" data-page="videos.html">Class Videos</a>
+  <a href="notes.html" data-page="notes.html">Notes</a>
+</nav>
+
+<main class="page">
+
+  <div class="page-header">
+    <span class="eyebrow">Memories</span>
+    <h1>Class Photos</h1>
+    <p>Snapshots from the year.</p>
+  </div>
+
+  <div class="grid">
+    <div class="tile"><div class="thumb">🖼️</div><div class="label">Museum trip</div></div>
+    <div class="tile"><div class="thumb">🖼️</div><div class="label">Science fair</div></div>
+    <div class="tile"><div class="thumb">🖼️</div><div class="label">Sports day</div></div>
+    <div class="tile"><div class="thumb">🖼️</div><div class="label">Group project</div></div>
+    <div class="tile"><div class="thumb">🖼️</div><div class="label">Art class</div></div>
+    <div class="tile"><div class="thumb">🖼️</div><div class="label">Graduation prep</div></div>
+  </div>
+
+</main>
+
+<script src="js/app.js"></script>
+<script>requireAuth();</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#6B3FA0" />
+<link rel="icon" href="icons/icon-192.png" />
+<link rel="apple-touch-icon" href="icons/icon-192.png" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<title>Class Portal — Sign In</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="auth-wrap">
+  <div class="auth-card">
+    <div class="ring-row">
+      <span class="hole"></span><span class="hole"></span><span class="hole"></span>
+      <span class="hole"></span><span class="hole"></span>
+    </div>
+    <h1>Class Portal</h1>
+    <p class="class-name">Computer Engineering</p>
+    <p class="sub">Sign in to see announcements, assignments, and more.</p>
+
+    <form id="loginForm" novalidate>
+      <div class="field">
+        <label for="studentName">Name (optional)</label>
+        <input type="text" id="studentName" placeholder="e.g. Chinedu Okafor" autocomplete="name" />
+      </div>
+      <div class="field">
+        <label for="password">Class Password</label>
+        <input type="password" id="password" placeholder="Enter class password" required autocomplete="current-password" />
+      </div>
+      <div class="error-msg" id="errorMsg"></div>
+      <button type="submit" class="submit-btn">Enter Classroom</button>
+    </form>
+
+    <p class="hint">Ask your teacher if you don't have the password.</p>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
